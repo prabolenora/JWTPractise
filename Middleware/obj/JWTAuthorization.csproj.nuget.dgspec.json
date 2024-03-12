@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EDUCATION\\CERTS\\.net core\\project\\JWT\\JWTPractise\\Authentication\\JWTPractice\\JWTPractice.csproj": {}
+    "D:\\EDUCATION\\CERTS\\.net core\\project\\JWT\\JWTPractise\\Middleware\\JWTAuthorization.csproj": {}
   },
   "projects": {
-    "D:\\EDUCATION\\CERTS\\.net core\\project\\JWT\\JWTPractise\\Authentication\\JWTPractice\\JWTPractice.csproj": {
+    "D:\\EDUCATION\\CERTS\\.net core\\project\\JWT\\JWTPractise\\Middleware\\JWTAuthorization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EDUCATION\\CERTS\\.net core\\project\\JWT\\JWTPractise\\Authentication\\JWTPractice\\JWTPractice.csproj",
-        "projectName": "JWTPractice",
-        "projectPath": "D:\\EDUCATION\\CERTS\\.net core\\project\\JWT\\JWTPractise\\Authentication\\JWTPractice\\JWTPractice.csproj",
+        "projectUniqueName": "D:\\EDUCATION\\CERTS\\.net core\\project\\JWT\\JWTPractise\\Middleware\\JWTAuthorization.csproj",
+        "projectName": "JWTAuthorization",
+        "projectPath": "D:\\EDUCATION\\CERTS\\.net core\\project\\JWT\\JWTPractise\\Middleware\\JWTAuthorization.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\EDUCATION\\CERTS\\.net core\\project\\JWT\\JWTPractise\\Authentication\\JWTPractice\\obj\\",
+        "outputPath": "D:\\EDUCATION\\CERTS\\.net core\\project\\JWT\\JWTPractise\\Middleware\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,6 +52,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             }
           },
           "imports": [
