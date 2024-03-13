@@ -1,3 +1,4 @@
+using JWTAuthorization.Middleware;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -40,7 +41,8 @@ builder.Services.AddSwaggerGen(options =>
     options.OperationFilter<SecurityRequirementsOperationFilter>();
 });
 
-builder.Services.AddTransient<RequestLoggingMiddleware>();
+builder.Services.AddSingleton<RequestLoggingMiddleware>();
+builder.Services.AddSingleton<SecondMiddleware>();
 
 var app = builder.Build();
 
@@ -57,8 +59,10 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseMiddleware<SecondMiddleware>(); // Add the custom middleware here
 
 app.UseMiddleware<RequestLoggingMiddleware>(); // Add the custom middleware here
+
 
 app.UseEndpoints(endpoints =>
 {

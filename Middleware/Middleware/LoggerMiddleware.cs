@@ -28,5 +28,6 @@ public class RequestLoggingMiddleware : IMiddleware
 
         // Call the next middleware in the pipeline
         //await next();
+        await next(context);
     }
 }
